@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		659B63EF2087625F001BE10C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B63EE2087625F001BE10C /* AppDelegate.m */; };
+		659B63F22087625F001BE10C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B63F12087625F001BE10C /* ViewController.m */; };
+		659B63F52087625F001BE10C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659B63F32087625F001BE10C /* Main.storyboard */; };
+		659B63F82087625F001BE10C /* CitymapperCodingChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 659B63F62087625F001BE10C /* CitymapperCodingChallenge.xcdatamodeld */; };
+		659B63FA20876260001BE10C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659B63F920876260001BE10C /* Assets.xcassets */; };
+		659B63FD20876260001BE10C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659B63FB20876260001BE10C /* LaunchScreen.storyboard */; };
+		659B640020876260001BE10C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B63FF20876260001BE10C /* main.m */; };
+		659B640A20876260001BE10C /* CitymapperCodingChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B640920876260001BE10C /* CitymapperCodingChallengeTests.m */; };
+		659B641520876260001BE10C /* CitymapperCodingChallengeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B641420876260001BE10C /* CitymapperCodingChallengeUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		659B640620876260001BE10C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 659B63E22087625F001BE10C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 659B63E92087625F001BE10C;
+			remoteInfo = CitymapperCodingChallenge;
+		};
+		659B641120876260001BE10C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 659B63E22087625F001BE10C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 659B63E92087625F001BE10C;
+			remoteInfo = CitymapperCodingChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		659B63EA2087625F001BE10C /* CitymapperCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CitymapperCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		659B63ED2087625F001BE10C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		659B63EE2087625F001BE10C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		659B63F02087625F001BE10C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		659B63F12087625F001BE10C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		659B63F42087625F001BE10C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		659B63F72087625F001BE10C /* CitymapperCodingChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CitymapperCodingChallenge.xcdatamodel; sourceTree = "<group>"; };
+		659B63F920876260001BE10C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		659B63FC20876260001BE10C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		659B63FE20876260001BE10C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		659B63FF20876260001BE10C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		659B640520876260001BE10C /* CitymapperCodingChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CitymapperCodingChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		659B640920876260001BE10C /* CitymapperCodingChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CitymapperCodingChallengeTests.m; sourceTree = "<group>"; };
+		659B640B20876260001BE10C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		659B641020876260001BE10C /* CitymapperCodingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CitymapperCodingChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		659B641420876260001BE10C /* CitymapperCodingChallengeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CitymapperCodingChallengeUITests.m; sourceTree = "<group>"; };
+		659B641620876260001BE10C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		659B63E72087625F001BE10C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		659B640220876260001BE10C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		659B640D20876260001BE10C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		659B63E12087625F001BE10C = {
+			isa = PBXGroup;
+			children = (
+				659B63EC2087625F001BE10C /* CitymapperCodingChallenge */,
+				659B640820876260001BE10C /* CitymapperCodingChallengeTests */,
+				659B641320876260001BE10C /* CitymapperCodingChallengeUITests */,
+				659B63EB2087625F001BE10C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		659B63EB2087625F001BE10C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				659B63EA2087625F001BE10C /* CitymapperCodingChallenge.app */,
+				659B640520876260001BE10C /* CitymapperCodingChallengeTests.xctest */,
+				659B641020876260001BE10C /* CitymapperCodingChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		659B63EC2087625F001BE10C /* CitymapperCodingChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				659B63ED2087625F001BE10C /* AppDelegate.h */,
+				659B63EE2087625F001BE10C /* AppDelegate.m */,
+				659B63F02087625F001BE10C /* ViewController.h */,
+				659B63F12087625F001BE10C /* ViewController.m */,
+				659B63F32087625F001BE10C /* Main.storyboard */,
+				659B63F920876260001BE10C /* Assets.xcassets */,
+				659B63FB20876260001BE10C /* LaunchScreen.storyboard */,
+				659B63FE20876260001BE10C /* Info.plist */,
+				659B63FF20876260001BE10C /* main.m */,
+				659B63F62087625F001BE10C /* CitymapperCodingChallenge.xcdatamodeld */,
+			);
+			path = CitymapperCodingChallenge;
+			sourceTree = "<group>";
+		};
+		659B640820876260001BE10C /* CitymapperCodingChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				659B640920876260001BE10C /* CitymapperCodingChallengeTests.m */,
+				659B640B20876260001BE10C /* Info.plist */,
+			);
+			path = CitymapperCodingChallengeTests;
+			sourceTree = "<group>";
+		};
+		659B641320876260001BE10C /* CitymapperCodingChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				659B641420876260001BE10C /* CitymapperCodingChallengeUITests.m */,
+				659B641620876260001BE10C /* Info.plist */,
+			);
+			path = CitymapperCodingChallengeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		659B63E92087625F001BE10C /* CitymapperCodingChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 659B641920876260001BE10C /* Build configuration list for PBXNativeTarget "CitymapperCodingChallenge" */;
+			buildPhases = (
+				659B63E62087625F001BE10C /* Sources */,
+				659B63E72087625F001BE10C /* Frameworks */,
+				659B63E82087625F001BE10C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CitymapperCodingChallenge;
+			productName = CitymapperCodingChallenge;
+			productReference = 659B63EA2087625F001BE10C /* CitymapperCodingChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		659B640420876260001BE10C /* CitymapperCodingChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 659B641C20876260001BE10C /* Build configuration list for PBXNativeTarget "CitymapperCodingChallengeTests" */;
+			buildPhases = (
+				659B640120876260001BE10C /* Sources */,
+				659B640220876260001BE10C /* Frameworks */,
+				659B640320876260001BE10C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				659B640720876260001BE10C /* PBXTargetDependency */,
+			);
+			name = CitymapperCodingChallengeTests;
+			productName = CitymapperCodingChallengeTests;
+			productReference = 659B640520876260001BE10C /* CitymapperCodingChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		659B640F20876260001BE10C /* CitymapperCodingChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 659B641F20876260001BE10C /* Build configuration list for PBXNativeTarget "CitymapperCodingChallengeUITests" */;
+			buildPhases = (
+				659B640C20876260001BE10C /* Sources */,
+				659B640D20876260001BE10C /* Frameworks */,
+				659B640E20876260001BE10C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				659B641220876260001BE10C /* PBXTargetDependency */,
+			);
+			name = CitymapperCodingChallengeUITests;
+			productName = CitymapperCodingChallengeUITests;
+			productReference = 659B641020876260001BE10C /* CitymapperCodingChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		659B63E22087625F001BE10C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Lucyna Galik";
+				TargetAttributes = {
+					659B63E92087625F001BE10C = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					659B640420876260001BE10C = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 659B63E92087625F001BE10C;
+					};
+					659B640F20876260001BE10C = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 659B63E92087625F001BE10C;
+					};
+				};
+			};
+			buildConfigurationList = 659B63E52087625F001BE10C /* Build configuration list for PBXProject "CitymapperCodingChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 659B63E12087625F001BE10C;
+			productRefGroup = 659B63EB2087625F001BE10C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				659B63E92087625F001BE10C /* CitymapperCodingChallenge */,
+				659B640420876260001BE10C /* CitymapperCodingChallengeTests */,
+				659B640F20876260001BE10C /* CitymapperCodingChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		659B63E82087625F001BE10C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659B63FD20876260001BE10C /* LaunchScreen.storyboard in Resources */,
+				659B63FA20876260001BE10C /* Assets.xcassets in Resources */,
+				659B63F52087625F001BE10C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		659B640320876260001BE10C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		659B640E20876260001BE10C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		659B63E62087625F001BE10C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659B63F82087625F001BE10C /* CitymapperCodingChallenge.xcdatamodeld in Sources */,
+				659B63F22087625F001BE10C /* ViewController.m in Sources */,
+				659B640020876260001BE10C /* main.m in Sources */,
+				659B63EF2087625F001BE10C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		659B640120876260001BE10C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659B640A20876260001BE10C /* CitymapperCodingChallengeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		659B640C20876260001BE10C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659B641520876260001BE10C /* CitymapperCodingChallengeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		659B640720876260001BE10C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 659B63E92087625F001BE10C /* CitymapperCodingChallenge */;
+			targetProxy = 659B640620876260001BE10C /* PBXContainerItemProxy */;
+		};
+		659B641220876260001BE10C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 659B63E92087625F001BE10C /* CitymapperCodingChallenge */;
+			targetProxy = 659B641120876260001BE10C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		659B63F32087625F001BE10C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				659B63F42087625F001BE10C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		659B63FB20876260001BE10C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				659B63FC20876260001BE10C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		659B641720876260001BE10C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		659B641820876260001BE10C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		659B641A20876260001BE10C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58T5DM3KVX;
+				INFOPLIST_FILE = CitymapperCodingChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucynagalik.CitymapperCodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		659B641B20876260001BE10C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58T5DM3KVX;
+				INFOPLIST_FILE = CitymapperCodingChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucynagalik.CitymapperCodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		659B641D20876260001BE10C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58T5DM3KVX;
+				INFOPLIST_FILE = CitymapperCodingChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucynagalik.CitymapperCodingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CitymapperCodingChallenge.app/CitymapperCodingChallenge";
+			};
+			name = Debug;
+		};
+		659B641E20876260001BE10C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58T5DM3KVX;
+				INFOPLIST_FILE = CitymapperCodingChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucynagalik.CitymapperCodingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CitymapperCodingChallenge.app/CitymapperCodingChallenge";
+			};
+			name = Release;
+		};
+		659B642020876260001BE10C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58T5DM3KVX;
+				INFOPLIST_FILE = CitymapperCodingChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucynagalik.CitymapperCodingChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CitymapperCodingChallenge;
+			};
+			name = Debug;
+		};
+		659B642120876260001BE10C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58T5DM3KVX;
+				INFOPLIST_FILE = CitymapperCodingChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucynagalik.CitymapperCodingChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CitymapperCodingChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		659B63E52087625F001BE10C /* Build configuration list for PBXProject "CitymapperCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				659B641720876260001BE10C /* Debug */,
+				659B641820876260001BE10C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		659B641920876260001BE10C /* Build configuration list for PBXNativeTarget "CitymapperCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				659B641A20876260001BE10C /* Debug */,
+				659B641B20876260001BE10C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		659B641C20876260001BE10C /* Build configuration list for PBXNativeTarget "CitymapperCodingChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				659B641D20876260001BE10C /* Debug */,
+				659B641E20876260001BE10C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		659B641F20876260001BE10C /* Build configuration list for PBXNativeTarget "CitymapperCodingChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				659B642020876260001BE10C /* Debug */,
+				659B642120876260001BE10C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		659B63F62087625F001BE10C /* CitymapperCodingChallenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				659B63F72087625F001BE10C /* CitymapperCodingChallenge.xcdatamodel */,
+			);
+			currentVersion = 659B63F72087625F001BE10C /* CitymapperCodingChallenge.xcdatamodel */;
+			path = CitymapperCodingChallenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 659B63E22087625F001BE10C /* Project object */;
+}
