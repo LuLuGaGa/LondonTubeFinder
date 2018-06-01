@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6514F1B7208CB0B30053C0E7 /* StationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6514F1B6208CB0B30053C0E7 /* StationTableViewCell.m */; };
+		6514F1BA208CD4E60053C0E7 /* StationDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6514F1B9208CD4E60053C0E7 /* StationDetailVC.m */; };
+		6514F1BE208D0D350053C0E7 /* FacilitiesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6514F1BD208D0D350053C0E7 /* FacilitiesCollectionViewCell.m */; };
+		6514F1C1208DC8A40053C0E7 /* Train.m in Sources */ = {isa = PBXBuildFile; fileRef = 6514F1C0208DC8A40053C0E7 /* Train.m */; };
+		6514F1C4208DCFC40053C0E7 /* TrainsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6514F1C3208DCFC40053C0E7 /* TrainsTableViewCell.m */; };
+		6514F1D0208F5F860053C0E7 /* UICollectionViewLeftAlignedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6514F1CE208F5F860053C0E7 /* UICollectionViewLeftAlignedLayout.m */; };
+		6514F1D3208F691A0053C0E7 /* FacilityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6514F1D2208F691A0053C0E7 /* FacilityVC.m */; };
+		659B63EF2087625F001BE10C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B63EE2087625F001BE10C /* AppDelegate.m */; };
+		659B63F52087625F001BE10C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659B63F32087625F001BE10C /* Main.storyboard */; };
+		659B63FA20876260001BE10C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659B63F920876260001BE10C /* Assets.xcassets */; };
+		659B63FD20876260001BE10C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659B63FB20876260001BE10C /* LaunchScreen.storyboard */; };
+		659B640020876260001BE10C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B63FF20876260001BE10C /* main.m */; };
+		659B640A20876260001BE10C /* LondonTubeFinderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B640920876260001BE10C /* LondonTubeFinderTests.m */; };
+		659B641520876260001BE10C /* LondonTubeFinderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B641420876260001BE10C /* LondonTubeFinderUITests.m */; };
+		659B642420876972001BE10C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659B642320876972001BE10C /* CoreLocation.framework */; };
+		659B642720876E41001BE10C /* StationsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B642620876E41001BE10C /* StationsVC.m */; };
+		659B642F2087A255001BE10C /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B642E2087A255001BE10C /* Station.m */; };
+		65D0654C20C15E2100BC50A5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D0654B20C15E2100BC50A5 /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		659B640620876260001BE10C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 659B63E22087625F001BE10C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 659B63E92087625F001BE10C;
+			remoteInfo = CitymapperCodingChallenge;
+		};
+		659B641120876260001BE10C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 659B63E22087625F001BE10C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 659B63E92087625F001BE10C;
+			remoteInfo = CitymapperCodingChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6514F1B5208CB0B30053C0E7 /* StationTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StationTableViewCell.h; sourceTree = "<group>"; };
+		6514F1B6208CB0B30053C0E7 /* StationTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StationTableViewCell.m; sourceTree = "<group>"; };
+		6514F1B8208CD4E60053C0E7 /* StationDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StationDetailVC.h; sourceTree = "<group>"; };
+		6514F1B9208CD4E60053C0E7 /* StationDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StationDetailVC.m; sourceTree = "<group>"; };
+		6514F1BC208D0D350053C0E7 /* FacilitiesCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FacilitiesCollectionViewCell.h; sourceTree = "<group>"; };
+		6514F1BD208D0D350053C0E7 /* FacilitiesCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FacilitiesCollectionViewCell.m; sourceTree = "<group>"; };
+		6514F1BF208D457E0053C0E7 /* Train.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Train.h; sourceTree = "<group>"; };
+		6514F1C0208DC8A40053C0E7 /* Train.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Train.m; sourceTree = "<group>"; };
+		6514F1C2208DCFC40053C0E7 /* TrainsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrainsTableViewCell.h; sourceTree = "<group>"; };
+		6514F1C3208DCFC40053C0E7 /* TrainsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrainsTableViewCell.m; sourceTree = "<group>"; };
+		6514F1CE208F5F860053C0E7 /* UICollectionViewLeftAlignedLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewLeftAlignedLayout.m; sourceTree = "<group>"; };
+		6514F1CF208F5F860053C0E7 /* UICollectionViewLeftAlignedLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UICollectionViewLeftAlignedLayout.h; path = "../../../../../Downloads/UICollectionViewLeftAlignedLayout-master/UICollectionViewLeftAlignedLayout/UICollectionViewLeftAlignedLayout.h"; sourceTree = "<group>"; };
+		6514F1D1208F691A0053C0E7 /* FacilityVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FacilityVC.h; sourceTree = "<group>"; };
+		6514F1D2208F691A0053C0E7 /* FacilityVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FacilityVC.m; sourceTree = "<group>"; };
+		659B63EA2087625F001BE10C /* LondonTubeFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LondonTubeFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		659B63ED2087625F001BE10C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		659B63EE2087625F001BE10C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		659B63F42087625F001BE10C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		659B63F920876260001BE10C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		659B63FC20876260001BE10C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		659B63FE20876260001BE10C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		659B63FF20876260001BE10C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		659B640520876260001BE10C /* LondonTubeFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LondonTubeFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		659B640920876260001BE10C /* LondonTubeFinderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LondonTubeFinderTests.m; sourceTree = "<group>"; };
+		659B640B20876260001BE10C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		659B641020876260001BE10C /* LondonTubeFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LondonTubeFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		659B641420876260001BE10C /* LondonTubeFinderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LondonTubeFinderUITests.m; sourceTree = "<group>"; };
+		659B641620876260001BE10C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		659B642320876972001BE10C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		659B642520876E41001BE10C /* StationsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StationsVC.h; sourceTree = "<group>"; };
+		659B642620876E41001BE10C /* StationsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StationsVC.m; sourceTree = "<group>"; };
+		659B642E2087A255001BE10C /* Station.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Station.m; sourceTree = "<group>"; };
+		659B64302087A265001BE10C /* Station.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Station.h; sourceTree = "<group>"; };
+		65D0654B20C15E2100BC50A5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		659B63E72087625F001BE10C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659B642420876972001BE10C /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		659B640220876260001BE10C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		659B640D20876260001BE10C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6514F1C5208DD04B0053C0E7 /* NearbySations */ = {
+			isa = PBXGroup;
+			children = (
+				659B642520876E41001BE10C /* StationsVC.h */,
+				659B642620876E41001BE10C /* StationsVC.m */,
+				659B642E2087A255001BE10C /* Station.m */,
+				659B64302087A265001BE10C /* Station.h */,
+				6514F1CA208F5E900053C0E7 /* UIComponents */,
+			);
+			path = NearbySations;
+			sourceTree = "<group>";
+		};
+		6514F1C6208DD0790053C0E7 /* StationDetails */ = {
+			isa = PBXGroup;
+			children = (
+				6514F1B8208CD4E60053C0E7 /* StationDetailVC.h */,
+				6514F1B9208CD4E60053C0E7 /* StationDetailVC.m */,
+				6514F1BF208D457E0053C0E7 /* Train.h */,
+				6514F1C0208DC8A40053C0E7 /* Train.m */,
+				6514F1CB208F5EA80053C0E7 /* UIComponents */,
+			);
+			path = StationDetails;
+			sourceTree = "<group>";
+		};
+		6514F1CA208F5E900053C0E7 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				6514F1B5208CB0B30053C0E7 /* StationTableViewCell.h */,
+				6514F1B6208CB0B30053C0E7 /* StationTableViewCell.m */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		6514F1CB208F5EA80053C0E7 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				6514F1C2208DCFC40053C0E7 /* TrainsTableViewCell.h */,
+				6514F1C3208DCFC40053C0E7 /* TrainsTableViewCell.m */,
+				6514F1CF208F5F860053C0E7 /* UICollectionViewLeftAlignedLayout.h */,
+				6514F1CE208F5F860053C0E7 /* UICollectionViewLeftAlignedLayout.m */,
+				6514F1BC208D0D350053C0E7 /* FacilitiesCollectionViewCell.h */,
+				6514F1BD208D0D350053C0E7 /* FacilitiesCollectionViewCell.m */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		6514F1D4208F69230053C0E7 /* FacilityDetails */ = {
+			isa = PBXGroup;
+			children = (
+				6514F1D1208F691A0053C0E7 /* FacilityVC.h */,
+				6514F1D2208F691A0053C0E7 /* FacilityVC.m */,
+			);
+			path = FacilityDetails;
+			sourceTree = "<group>";
+		};
+		659B63E12087625F001BE10C = {
+			isa = PBXGroup;
+			children = (
+				65D0654B20C15E2100BC50A5 /* Default-568h@2x.png */,
+				659B63EC2087625F001BE10C /* LondonTubeFinder */,
+				659B640820876260001BE10C /* LondonTubeFinderTests */,
+				659B641320876260001BE10C /* LondonTubeFinderUITests */,
+				659B63EB2087625F001BE10C /* Products */,
+				659B642220876972001BE10C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		659B63EB2087625F001BE10C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				659B63EA2087625F001BE10C /* LondonTubeFinder.app */,
+				659B640520876260001BE10C /* LondonTubeFinderTests.xctest */,
+				659B641020876260001BE10C /* LondonTubeFinderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		659B63EC2087625F001BE10C /* LondonTubeFinder */ = {
+			isa = PBXGroup;
+			children = (
+				6514F1C5208DD04B0053C0E7 /* NearbySations */,
+				6514F1C6208DD0790053C0E7 /* StationDetails */,
+				6514F1D4208F69230053C0E7 /* FacilityDetails */,
+				659B63F32087625F001BE10C /* Main.storyboard */,
+				659B63F920876260001BE10C /* Assets.xcassets */,
+				659B63FE20876260001BE10C /* Info.plist */,
+				65D3D999209139C700B74DE9 /* SupportingFiles */,
+			);
+			path = LondonTubeFinder;
+			sourceTree = "<group>";
+		};
+		659B640820876260001BE10C /* LondonTubeFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				659B640920876260001BE10C /* LondonTubeFinderTests.m */,
+				659B640B20876260001BE10C /* Info.plist */,
+			);
+			path = LondonTubeFinderTests;
+			sourceTree = "<group>";
+		};
+		659B641320876260001BE10C /* LondonTubeFinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				659B641420876260001BE10C /* LondonTubeFinderUITests.m */,
+				659B641620876260001BE10C /* Info.plist */,
+			);
+			path = LondonTubeFinderUITests;
+			sourceTree = "<group>";
+		};
+		659B642220876972001BE10C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				659B642320876972001BE10C /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65D3D999209139C700B74DE9 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				659B63FB20876260001BE10C /* LaunchScreen.storyboard */,
+				659B63FF20876260001BE10C /* main.m */,
+				659B63ED2087625F001BE10C /* AppDelegate.h */,
+				659B63EE2087625F001BE10C /* AppDelegate.m */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		659B63E92087625F001BE10C /* LondonTubeFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 659B641920876260001BE10C /* Build configuration list for PBXNativeTarget "LondonTubeFinder" */;
+			buildPhases = (
+				659B63E62087625F001BE10C /* Sources */,
+				659B63E72087625F001BE10C /* Frameworks */,
+				659B63E82087625F001BE10C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LondonTubeFinder;
+			productName = CitymapperCodingChallenge;
+			productReference = 659B63EA2087625F001BE10C /* LondonTubeFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		659B640420876260001BE10C /* LondonTubeFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 659B641C20876260001BE10C /* Build configuration list for PBXNativeTarget "LondonTubeFinderTests" */;
+			buildPhases = (
+				659B640120876260001BE10C /* Sources */,
+				659B640220876260001BE10C /* Frameworks */,
+				659B640320876260001BE10C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				659B640720876260001BE10C /* PBXTargetDependency */,
+			);
+			name = LondonTubeFinderTests;
+			productName = CitymapperCodingChallengeTests;
+			productReference = 659B640520876260001BE10C /* LondonTubeFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		659B640F20876260001BE10C /* LondonTubeFinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 659B641F20876260001BE10C /* Build configuration list for PBXNativeTarget "LondonTubeFinderUITests" */;
+			buildPhases = (
+				659B640C20876260001BE10C /* Sources */,
+				659B640D20876260001BE10C /* Frameworks */,
+				659B640E20876260001BE10C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				659B641220876260001BE10C /* PBXTargetDependency */,
+			);
+			name = LondonTubeFinderUITests;
+			productName = CitymapperCodingChallengeUITests;
+			productReference = 659B641020876260001BE10C /* LondonTubeFinderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		659B63E22087625F001BE10C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Lucyna Galik";
+				TargetAttributes = {
+					659B63E92087625F001BE10C = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					659B640420876260001BE10C = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 659B63E92087625F001BE10C;
+					};
+					659B640F20876260001BE10C = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 659B63E92087625F001BE10C;
+					};
+				};
+			};
+			buildConfigurationList = 659B63E52087625F001BE10C /* Build configuration list for PBXProject "LondonTubeFinder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 659B63E12087625F001BE10C;
+			productRefGroup = 659B63EB2087625F001BE10C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				659B63E92087625F001BE10C /* LondonTubeFinder */,
+				659B640420876260001BE10C /* LondonTubeFinderTests */,
+				659B640F20876260001BE10C /* LondonTubeFinderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		659B63E82087625F001BE10C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659B63FD20876260001BE10C /* LaunchScreen.storyboard in Resources */,
+				65D0654C20C15E2100BC50A5 /* Default-568h@2x.png in Resources */,
+				659B63FA20876260001BE10C /* Assets.xcassets in Resources */,
+				659B63F52087625F001BE10C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		659B640320876260001BE10C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		659B640E20876260001BE10C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		659B63E62087625F001BE10C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6514F1C1208DC8A40053C0E7 /* Train.m in Sources */,
+				659B642F2087A255001BE10C /* Station.m in Sources */,
+				659B642720876E41001BE10C /* StationsVC.m in Sources */,
+				6514F1BE208D0D350053C0E7 /* FacilitiesCollectionViewCell.m in Sources */,
+				6514F1D0208F5F860053C0E7 /* UICollectionViewLeftAlignedLayout.m in Sources */,
+				6514F1D3208F691A0053C0E7 /* FacilityVC.m in Sources */,
+				6514F1BA208CD4E60053C0E7 /* StationDetailVC.m in Sources */,
+				6514F1C4208DCFC40053C0E7 /* TrainsTableViewCell.m in Sources */,
+				659B640020876260001BE10C /* main.m in Sources */,
+				659B63EF2087625F001BE10C /* AppDelegate.m in Sources */,
+				6514F1B7208CB0B30053C0E7 /* StationTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		659B640120876260001BE10C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659B640A20876260001BE10C /* LondonTubeFinderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		659B640C20876260001BE10C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659B641520876260001BE10C /* LondonTubeFinderUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		659B640720876260001BE10C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 659B63E92087625F001BE10C /* LondonTubeFinder */;
+			targetProxy = 659B640620876260001BE10C /* PBXContainerItemProxy */;
+		};
+		659B641220876260001BE10C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 659B63E92087625F001BE10C /* LondonTubeFinder */;
+			targetProxy = 659B641120876260001BE10C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		659B63F32087625F001BE10C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				659B63F42087625F001BE10C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		659B63FB20876260001BE10C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				659B63FC20876260001BE10C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		659B641720876260001BE10C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		659B641820876260001BE10C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		659B641A20876260001BE10C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58T5DM3KVX;
+				INFOPLIST_FILE = LondonTubeFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucynagalik.LondonTubeFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		659B641B20876260001BE10C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58T5DM3KVX;
+				INFOPLIST_FILE = LondonTubeFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucynagalik.LondonTubeFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		659B641D20876260001BE10C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58T5DM3KVX;
+				INFOPLIST_FILE = LondonTubeFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucynagalik.LondonTubeFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LondonTubeFinder.app/LondonTubeFinder";
+			};
+			name = Debug;
+		};
+		659B641E20876260001BE10C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58T5DM3KVX;
+				INFOPLIST_FILE = LondonTubeFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucynagalik.LondonTubeFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LondonTubeFinder.app/LondonTubeFinder";
+			};
+			name = Release;
+		};
+		659B642020876260001BE10C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58T5DM3KVX;
+				INFOPLIST_FILE = LondonTubeFinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucynagalik.LondonTubeFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LondonTubeFinder;
+			};
+			name = Debug;
+		};
+		659B642120876260001BE10C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58T5DM3KVX;
+				INFOPLIST_FILE = LondonTubeFinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucynagalik.LondonTubeFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LondonTubeFinder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		659B63E52087625F001BE10C /* Build configuration list for PBXProject "LondonTubeFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				659B641720876260001BE10C /* Debug */,
+				659B641820876260001BE10C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		659B641920876260001BE10C /* Build configuration list for PBXNativeTarget "LondonTubeFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				659B641A20876260001BE10C /* Debug */,
+				659B641B20876260001BE10C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		659B641C20876260001BE10C /* Build configuration list for PBXNativeTarget "LondonTubeFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				659B641D20876260001BE10C /* Debug */,
+				659B641E20876260001BE10C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		659B641F20876260001BE10C /* Build configuration list for PBXNativeTarget "LondonTubeFinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				659B642020876260001BE10C /* Debug */,
+				659B642120876260001BE10C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 659B63E22087625F001BE10C /* Project object */;
+}

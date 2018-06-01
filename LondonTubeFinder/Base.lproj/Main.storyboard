@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aMJ-Av-ExM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Nearest Stations-->
+        <scene sceneID="JqP-Nd-0Z1">
+            <objects>
+                <viewController title="Nearest Stations" id="VQQ-tV-K66" customClass="StationsVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QNN-Jy-r3c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DKa-qu-iPW">
+                                <rect key="frame" x="0.0" y="64" width="375" height="201"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="Uzv-8A-kQV">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="201"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="Cable Car"/>
+                                <constraints>
+                                    <constraint firstItem="Uzv-8A-kQV" firstAttribute="centerX" secondItem="DKa-qu-iPW" secondAttribute="centerX" id="6R9-mt-8dz"/>
+                                    <constraint firstItem="Uzv-8A-kQV" firstAttribute="width" secondItem="DKa-qu-iPW" secondAttribute="width" id="It5-Zh-bBh"/>
+                                    <constraint firstItem="Uzv-8A-kQV" firstAttribute="height" secondItem="DKa-qu-iPW" secondAttribute="height" id="ktd-ID-NqB"/>
+                                    <constraint firstItem="Uzv-8A-kQV" firstAttribute="centerY" secondItem="DKa-qu-iPW" secondAttribute="centerY" id="yIo-fn-k1X"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="80a-4w-GBh">
+                                <rect key="frame" x="0.0" y="265" width="375" height="402"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="Cable Car"/>
+                                <color key="sectionIndexBackgroundColor" white="0.90083043979999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="stationCell" rowHeight="80" id="EbM-2w-9Vd" customClass="StationTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EbM-2w-9Vd" id="B1q-eX-Ghh">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JAp-mC-pRC">
+                                                    <rect key="frame" x="3.5" y="4" width="367" height="72"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1Dr-ZL-iQV">
+                                                            <rect key="frame" x="16" y="40" width="335" height="16"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGu-CN-f31">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="20.5" height="16"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="8"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Apm-c5-pmt">
+                                                                    <rect key="frame" x="28.5" y="0.0" width="20.5" height="16"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="8"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ptk-hu-MNq">
+                                                                    <rect key="frame" x="57" y="0.0" width="21" height="16"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="8"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="asv-fV-99w">
+                                                                    <rect key="frame" x="86" y="0.0" width="20.5" height="16"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="8"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqw-wv-FSb">
+                                                                    <rect key="frame" x="114.5" y="0.0" width="20.5" height="16"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="8"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KA5-ez-OnN">
+                                                                    <rect key="frame" x="143" y="0.0" width="20.5" height="16"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="8"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ayH-fq-1bb">
+                                                                    <rect key="frame" x="171.5" y="0.0" width="20.5" height="16"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="8"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5m4-2f-AhB">
+                                                                    <rect key="frame" x="200" y="0.0" width="20.5" height="16"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="8"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R3t-ML-Or4">
+                                                                    <rect key="frame" x="228.5" y="0.0" width="21" height="16"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="8"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WgF-sX-C9s">
+                                                                    <rect key="frame" x="257.5" y="0.0" width="20.5" height="16"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="8"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wSc-RI-OEG">
+                                                                    <rect key="frame" x="286" y="0.0" width="20.5" height="16"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="8"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="knh-N6-ev6">
+                                                                    <rect key="frame" x="314.5" y="0.0" width="20.5" height="16"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="8"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="1Dr-ZL-iQV" firstAttribute="leading" secondItem="JAp-mC-pRC" secondAttribute="leading" constant="16" id="JKd-ng-G7F"/>
+                                                        <constraint firstAttribute="bottom" secondItem="1Dr-ZL-iQV" secondAttribute="bottom" constant="16" id="X1y-2g-r1a"/>
+                                                        <constraint firstItem="1Dr-ZL-iQV" firstAttribute="height" secondItem="JAp-mC-pRC" secondAttribute="height" multiplier="2:9" id="ZE4-9u-2zX"/>
+                                                        <constraint firstAttribute="trailing" secondItem="1Dr-ZL-iQV" secondAttribute="trailing" constant="16" id="qAF-eY-43M"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Great Portland Street" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qy-Jh-AG8">
+                                                    <rect key="frame" x="16" y="16.5" width="191.5" height="25.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="800 m" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TF-Td-KE0">
+                                                    <rect key="frame" x="290.5" y="27.5" width="53.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="tintColor" name="Cable Car"/>
+                                            <constraints>
+                                                <constraint firstItem="5TF-Td-KE0" firstAttribute="top" secondItem="B1q-eX-Ghh" secondAttribute="topMargin" constant="16" id="4bh-Ra-cb3"/>
+                                                <constraint firstItem="JAp-mC-pRC" firstAttribute="width" secondItem="B1q-eX-Ghh" secondAttribute="width" constant="-8" id="7CX-fa-YLq"/>
+                                                <constraint firstItem="JAp-mC-pRC" firstAttribute="centerY" secondItem="B1q-eX-Ghh" secondAttribute="centerY" id="AGa-dq-r23"/>
+                                                <constraint firstItem="6Qy-Jh-AG8" firstAttribute="leading" secondItem="B1q-eX-Ghh" secondAttribute="leading" constant="16" id="IRA-vn-ZLi"/>
+                                                <constraint firstItem="1Dr-ZL-iQV" firstAttribute="top" secondItem="6Qy-Jh-AG8" secondAttribute="bottom" constant="2" id="JeX-7G-mjt"/>
+                                                <constraint firstItem="JAp-mC-pRC" firstAttribute="centerX" secondItem="B1q-eX-Ghh" secondAttribute="centerX" id="K2z-VH-qqO"/>
+                                                <constraint firstItem="JAp-mC-pRC" firstAttribute="height" secondItem="B1q-eX-Ghh" secondAttribute="height" constant="-8" id="NFk-Pk-1Ev"/>
+                                                <constraint firstItem="6Qy-Jh-AG8" firstAttribute="top" secondItem="B1q-eX-Ghh" secondAttribute="top" constant="16" id="Yh3-Ez-6Sd"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="5TF-Td-KE0" secondAttribute="trailing" constant="16" id="aN9-FB-oBZ"/>
+                                                <constraint firstItem="5TF-Td-KE0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Qy-Jh-AG8" secondAttribute="trailing" constant="8" id="je8-In-XBJ"/>
+                                                <constraint firstItem="1Dr-ZL-iQV" firstAttribute="top" secondItem="5TF-Td-KE0" secondAttribute="bottom" constant="2" id="mKS-Hv-ZAG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="distanceLabel" destination="5TF-Td-KE0" id="fT4-Zb-i3d"/>
+                                            <outlet property="stationNameLabel" destination="6Qy-Jh-AG8" id="pZ9-ST-al7"/>
+                                            <outletCollection property="linesOblongs" destination="UGu-CN-f31" id="Mg3-OO-0Cx"/>
+                                            <outletCollection property="linesOblongs" destination="Apm-c5-pmt" id="qC5-MQ-oX1"/>
+                                            <outletCollection property="linesOblongs" destination="ptk-hu-MNq" id="ZQJ-AB-ng9"/>
+                                            <outletCollection property="linesOblongs" destination="asv-fV-99w" id="4ZJ-WZ-jbh"/>
+                                            <outletCollection property="linesOblongs" destination="dqw-wv-FSb" id="Vx0-0Y-HBI"/>
+                                            <outletCollection property="linesOblongs" destination="KA5-ez-OnN" id="EAw-1j-th7"/>
+                                            <outletCollection property="linesOblongs" destination="ayH-fq-1bb" id="IUp-jB-a2M"/>
+                                            <outletCollection property="linesOblongs" destination="5m4-2f-AhB" id="o4c-iN-14s"/>
+                                            <outletCollection property="linesOblongs" destination="R3t-ML-Or4" id="wIV-vo-9ex"/>
+                                            <outletCollection property="linesOblongs" destination="WgF-sX-C9s" id="FLA-Ro-R8M"/>
+                                            <outletCollection property="linesOblongs" destination="wSc-RI-OEG" id="iuX-nn-pP8"/>
+                                            <outletCollection property="linesOblongs" destination="knh-N6-ev6" id="EZs-Vn-awD"/>
+                                            <segue destination="mna-UE-tOt" kind="show" identifier="stationDetail" trigger="accessoryAction" id="3yv-a5-IpI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="VQQ-tV-K66" id="dXX-N1-LwE"/>
+                                    <outlet property="delegate" destination="VQQ-tV-K66" id="fpB-BS-OJZ"/>
+                                </connections>
+                            </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="SKU-hZ-zYZ">
+                                <rect key="frame" x="177" y="456" width="20" height="20"/>
+                                <color key="color" name="Cable Car"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.90083043979999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="Cable Car"/>
+                        <constraints>
+                            <constraint firstItem="32w-xJ-6DR" firstAttribute="top" secondItem="DKa-qu-iPW" secondAttribute="top" id="8IR-vb-N3G"/>
+                            <constraint firstItem="DKa-qu-iPW" firstAttribute="height" secondItem="32w-xJ-6DR" secondAttribute="height" multiplier="1:3" id="Ewv-yU-Y9O"/>
+                            <constraint firstItem="DKa-qu-iPW" firstAttribute="width" secondItem="32w-xJ-6DR" secondAttribute="width" id="J4t-LE-gT0"/>
+                            <constraint firstItem="32w-xJ-6DR" firstAttribute="bottom" secondItem="80a-4w-GBh" secondAttribute="bottom" id="W0H-qg-znW"/>
+                            <constraint firstItem="80a-4w-GBh" firstAttribute="width" secondItem="32w-xJ-6DR" secondAttribute="width" id="ZgF-jT-JGA"/>
+                            <constraint firstItem="SKU-hZ-zYZ" firstAttribute="centerY" secondItem="80a-4w-GBh" secondAttribute="centerY" id="a0o-lO-h76"/>
+                            <constraint firstItem="DKa-qu-iPW" firstAttribute="leading" secondItem="32w-xJ-6DR" secondAttribute="leading" id="fUW-9W-6yB"/>
+                            <constraint firstItem="80a-4w-GBh" firstAttribute="leading" secondItem="32w-xJ-6DR" secondAttribute="leading" id="hgO-Py-IWV"/>
+                            <constraint firstItem="SKU-hZ-zYZ" firstAttribute="centerX" secondItem="80a-4w-GBh" secondAttribute="centerX" id="rER-0E-3Xp"/>
+                            <constraint firstItem="80a-4w-GBh" firstAttribute="top" secondItem="DKa-qu-iPW" secondAttribute="bottom" id="zN4-Se-i0X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="32w-xJ-6DR"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Nearest Stations" id="hb8-cn-RrV">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="b83-t8-xzB">
+                            <color key="tintColor" name="Cable Car"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="fetchingStationsSpinner" destination="SKU-hZ-zYZ" id="tsC-VN-B6w"/>
+                        <outlet property="tableView" destination="80a-4w-GBh" id="84J-Pq-g8s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eal-V2-8Ck" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="652" y="64.31784107946028"/>
+        </scene>
+        <!--Station DetailVC-->
+        <scene sceneID="mo2-h8-Qrh">
+            <objects>
+                <viewController id="mna-UE-tOt" customClass="StationDetailVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2kU-Wr-POM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="En8-BL-Trw">
+                                <rect key="frame" x="8" y="72" width="359" height="201"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" sectionInsetReference="safeArea" id="dGs-Ri-32e" customClass="UICollectionViewLeftAlignedLayout">
+                                    <size key="itemSize" width="85" height="56"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="size" keyPath="estimatedItemSize">
+                                            <size key="value" width="44" height="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" reuseIdentifier="facilitiesCell" id="rwc-Eh-i2t" customClass="FacilitiesCollectionViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="85" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="85" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l23-z8-aJT">
+                                                    <rect key="frame" x="12" y="12" width="61" height="32"/>
+                                                    <color key="tintColor" red="0.95686274509803915" green="1" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" name="Cable Car"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="l23-z8-aJT" secondAttribute="trailing" constant="12" id="56b-63-iPc"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="l23-z8-aJT" secondAttribute="bottom" constant="4" id="D84-Fl-XIG"/>
+                                            <constraint firstItem="l23-z8-aJT" firstAttribute="centerY" secondItem="rwc-Eh-i2t" secondAttribute="centerY" id="EJ0-mm-UYw"/>
+                                            <constraint firstItem="l23-z8-aJT" firstAttribute="leading" secondItem="rwc-Eh-i2t" secondAttribute="leading" constant="12" id="Hjw-ti-dBI"/>
+                                            <constraint firstItem="l23-z8-aJT" firstAttribute="top" secondItem="rwc-Eh-i2t" secondAttribute="topMargin" constant="4" id="vt7-sX-ycO"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="18"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="facilitiesLabel" destination="l23-z8-aJT" id="So0-xH-SkI"/>
+                                            <segue destination="p1s-eT-0AM" kind="show" identifier="facilityDetail" id="U9V-4c-kCx"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="mna-UE-tOt" id="T49-EF-uim"/>
+                                    <outlet property="delegate" destination="mna-UE-tOt" id="JBC-ED-UHH"/>
+                                </connections>
+                            </collectionView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="U7K-c0-x3t">
+                                <rect key="frame" x="177.5" y="456" width="20" height="20"/>
+                                <color key="color" name="Cable Car"/>
+                            </activityIndicatorView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="hUE-V8-7Sv">
+                                <rect key="frame" x="177" y="162" width="20" height="20"/>
+                                <color key="color" name="Cable Car"/>
+                            </activityIndicatorView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9NG-pv-4H5">
+                                <rect key="frame" x="0.0" y="265" width="375" height="402"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="trainCell" id="eRG-Pf-Bga" customClass="TrainsTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eRG-Pf-Bga" id="OTK-5f-w2S">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="teo-hJ-Jyj">
+                                                    <rect key="frame" x="4" y="4" width="367" height="36"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4dK-qp-lhG">
+                                                    <rect key="frame" x="8" y="8" width="359" height="28"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="16"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elephant and Castle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsN-0e-90p">
+                                                    <rect key="frame" x="16" y="16" width="178" height="12"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="1 min" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhD-KB-mXI">
+                                                    <rect key="frame" x="319" y="16" width="40" height="12"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="teo-hJ-Jyj" firstAttribute="centerY" secondItem="OTK-5f-w2S" secondAttribute="centerY" id="5Kt-mq-Smk"/>
+                                                <constraint firstItem="GsN-0e-90p" firstAttribute="top" secondItem="OTK-5f-w2S" secondAttribute="top" constant="16" id="9Dd-0S-5Y0"/>
+                                                <constraint firstItem="QhD-KB-mXI" firstAttribute="top" secondItem="OTK-5f-w2S" secondAttribute="top" constant="16" id="ClT-tm-LGD"/>
+                                                <constraint firstItem="4dK-qp-lhG" firstAttribute="centerY" secondItem="OTK-5f-w2S" secondAttribute="centerY" id="E2b-25-7fV"/>
+                                                <constraint firstAttribute="trailing" secondItem="QhD-KB-mXI" secondAttribute="trailing" constant="16" id="Ile-9c-LBd"/>
+                                                <constraint firstAttribute="bottom" secondItem="QhD-KB-mXI" secondAttribute="bottom" constant="16" id="L1g-Lk-kvO"/>
+                                                <constraint firstItem="teo-hJ-Jyj" firstAttribute="height" secondItem="OTK-5f-w2S" secondAttribute="height" constant="-8" id="MdR-lM-hSq"/>
+                                                <constraint firstItem="4dK-qp-lhG" firstAttribute="centerX" secondItem="OTK-5f-w2S" secondAttribute="centerX" id="NDd-ws-Avf"/>
+                                                <constraint firstItem="4dK-qp-lhG" firstAttribute="width" secondItem="OTK-5f-w2S" secondAttribute="width" constant="-16" id="SBx-aB-zQz"/>
+                                                <constraint firstItem="teo-hJ-Jyj" firstAttribute="centerX" secondItem="OTK-5f-w2S" secondAttribute="centerX" id="UIs-P9-La8"/>
+                                                <constraint firstAttribute="bottom" secondItem="GsN-0e-90p" secondAttribute="bottom" constant="16" id="ViR-mh-ved"/>
+                                                <constraint firstItem="GsN-0e-90p" firstAttribute="leading" secondItem="OTK-5f-w2S" secondAttribute="leading" constant="16" id="a07-Br-zuq"/>
+                                                <constraint firstItem="teo-hJ-Jyj" firstAttribute="width" secondItem="OTK-5f-w2S" secondAttribute="width" constant="-8" id="dO3-iB-Lvd"/>
+                                                <constraint firstItem="4dK-qp-lhG" firstAttribute="height" secondItem="OTK-5f-w2S" secondAttribute="height" constant="-16" id="ttL-vy-zJs"/>
+                                                <constraint firstItem="QhD-KB-mXI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="GsN-0e-90p" secondAttribute="trailing" constant="8" id="w3A-vq-tm4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="destiantionLabel" destination="GsN-0e-90p" id="oNS-O8-Rca"/>
+                                            <outlet property="lineColourOutline" destination="teo-hJ-Jyj" id="WEb-3c-c3t"/>
+                                            <outlet property="timeDueLabel" destination="QhD-KB-mXI" id="wjY-b3-Ssc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="mna-UE-tOt" id="BEE-yP-80m"/>
+                                    <outlet property="delegate" destination="mna-UE-tOt" id="lmQ-xW-foH"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.90083043981481492" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="Cable Car"/>
+                        <constraints>
+                            <constraint firstItem="9NG-pv-4H5" firstAttribute="top" secondItem="En8-BL-Trw" secondAttribute="bottom" constant="-8" id="1gM-KQ-vnn"/>
+                            <constraint firstItem="U7K-c0-x3t" firstAttribute="centerY" secondItem="9NG-pv-4H5" secondAttribute="centerY" id="7Oa-xM-uKz"/>
+                            <constraint firstItem="2d2-bQ-pfz" firstAttribute="top" secondItem="En8-BL-Trw" secondAttribute="top" constant="-8" id="Acw-kr-LNS"/>
+                            <constraint firstItem="U7K-c0-x3t" firstAttribute="centerX" secondItem="9NG-pv-4H5" secondAttribute="centerX" id="Bvw-Dw-kPE"/>
+                            <constraint firstItem="hUE-V8-7Sv" firstAttribute="centerX" secondItem="En8-BL-Trw" secondAttribute="centerX" id="CAN-yM-sYM"/>
+                            <constraint firstItem="9NG-pv-4H5" firstAttribute="width" secondItem="2d2-bQ-pfz" secondAttribute="width" id="J34-xO-WrC"/>
+                            <constraint firstItem="9NG-pv-4H5" firstAttribute="bottom" secondItem="2d2-bQ-pfz" secondAttribute="bottom" id="ODc-2F-qiJ"/>
+                            <constraint firstItem="En8-BL-Trw" firstAttribute="width" secondItem="2d2-bQ-pfz" secondAttribute="width" constant="-16" id="WZZ-dw-N58"/>
+                            <constraint firstItem="2d2-bQ-pfz" firstAttribute="leading" secondItem="En8-BL-Trw" secondAttribute="leading" constant="-8" id="fho-8i-Wdr"/>
+                            <constraint firstItem="En8-BL-Trw" firstAttribute="height" secondItem="2d2-bQ-pfz" secondAttribute="height" multiplier="1:3" id="soi-wp-xot"/>
+                            <constraint firstItem="2d2-bQ-pfz" firstAttribute="trailing" secondItem="9NG-pv-4H5" secondAttribute="trailing" id="tT4-D6-rt6"/>
+                            <constraint firstItem="hUE-V8-7Sv" firstAttribute="centerY" secondItem="En8-BL-Trw" secondAttribute="centerY" id="xUb-2Z-log"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2d2-bQ-pfz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wb9-0s-18P">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="i9X-65-0cV">
+                            <color key="tintColor" name="Cable Car"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="En8-BL-Trw" id="mAS-D8-1Dk"/>
+                        <outlet property="fetchingFacilitiesSpinner" destination="hUE-V8-7Sv" id="Ouq-kv-5To"/>
+                        <outlet property="fetchingTrainsSpinner" destination="U7K-c0-x3t" id="l35-Xc-ZQV"/>
+                        <outlet property="tableView" destination="9NG-pv-4H5" id="vcJ-6F-hou"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RVN-YE-ymo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1516" y="62.518740629685162"/>
+        </scene>
+        <!--FacilityVC-->
+        <scene sceneID="SAq-PE-SvZ">
+            <objects>
+                <viewController id="p1s-eT-0AM" customClass="FacilityVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aEd-EL-ScV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.90083043979999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="Cable Car"/>
+                        <viewLayoutGuide key="safeArea" id="jpn-Ex-qnO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="B8A-Qd-MJW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mrp-UP-bmz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2321" y="64"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Po4-pq-6Ho">
+            <objects>
+                <navigationController id="aMJ-Av-ExM" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fu7-25-2yk">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VQQ-tV-K66" kind="relationship" relationship="rootViewController" id="wl9-3b-Ybk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wQF-CC-soM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1455" y="-917"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="map" width="792" height="713"/>
+        <namedColor name="Cable Car">
+            <color red="0.88235294117647056" green="0.090196078431372548" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
